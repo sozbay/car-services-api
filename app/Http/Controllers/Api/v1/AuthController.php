@@ -55,8 +55,8 @@ class AuthController extends BaseApiController
     public function login(LoginRequest $request): Response
     {
         $data = $request->validated();
-        if (Auth::attempt($data)) {
-            $token = Auth::attempt($data);
+        $token = Auth::attempt($data);
+        if ($token) {
             $user = Auth::user();
 
             return $this->successResponse(['user' => $user,
