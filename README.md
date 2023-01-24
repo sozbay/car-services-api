@@ -37,6 +37,8 @@ You need to generate a secret key to handle the token encryption. To do so, run 
 - {{base_url}}/auth/register --> Register
 - {{base_url}}/auth/login --> Login with token
 
+Create TOKEN and base_url variable in postman collection Environment, enter base_url value, token will be filled automatically
+
 After login, the token will be automatically transferred to {{TOKEN}} variable
 
 See all examples in **/data/Case.postman_collection.json**
